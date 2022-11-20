@@ -25,7 +25,7 @@ public class Showtea_Activity extends Activity implements AdapterView.OnItemClic
     //保存老师姓名，用来查询具体的教师信息
     private String name="";
     //保存家长手机号
-    public String par_phone;
+    public String stu_phone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,31 +35,31 @@ public class Showtea_Activity extends Activity implements AdapterView.OnItemClic
         Bundle bundle=intent.getExtras();
         subject_name=bundle.getString("subject");
         subject_name1=bundle.getString("subject");
-        par_phone=bundle.getString("phone");
+        stu_phone=bundle.getString("phone");
         init();
         //中文转英文
-        if (subject_name.equals("数学")) {
+        if (subject_name.equals("计算机网络")) {
             subject_name="math";
         }
-        if (subject_name.equals("语文")) {
+        if (subject_name.equals("操作系统")) {
             subject_name="chinese";
         }
-        if (subject_name.equals("英语")) {
+        if (subject_name.equals("数据结构")) {
             subject_name="english";
         }
-        if (subject_name.equals("物理")) {
+        if (subject_name.equals("MySQL数据库")) {
             subject_name="physical";
         }
-        if (subject_name.equals("政治")) {
+        if (subject_name.equals("Android studio")) {
             subject_name="politics";
         }
-        if (subject_name.equals("化学")) {
+        if (subject_name.equals("Web前端课程")) {
             subject_name="chemistry";
         }
-        if (subject_name.equals("生物")) {
+        if (subject_name.equals("C#/.Net课程")) {
             subject_name="biology";
         }
-        if (subject_name.equals("地理")) {
+        if (subject_name.equals("PHP+MySQL课程")) {
             subject_name="geography";
         }
         new AnotherTask().execute((Void[]) null);
@@ -97,7 +97,7 @@ public class Showtea_Activity extends Activity implements AdapterView.OnItemClic
                 message=getname.result.split(",");
                 Listview.setAdapter(new ArrayAdapter<String>(Showtea_Activity.this, android.R.layout.simple_list_item_1,message));
             }else {
-                Toast.makeText(Showtea_Activity.this, "抱歉！暂时没有你查找的教师！", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Showtea_Activity.this, "已加载完成啦！未查询到相关课程的教师！", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -111,7 +111,7 @@ public class Showtea_Activity extends Activity implements AdapterView.OnItemClic
         Bundle bundle=new Bundle();
         bundle.putString("teach_name", name);
         bundle.putString("subject", subject_name1);
-        bundle.putString("par_phone", par_phone);
+        bundle.putString("stu_phone", stu_phone);
         intent.putExtras(bundle);
         startActivity(intent);
     }

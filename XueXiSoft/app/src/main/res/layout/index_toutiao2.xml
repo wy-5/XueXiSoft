@@ -20,7 +20,7 @@
       android:textSize="16sp"
       android:textColor="#000000"
       android:layout_gravity="center_vertical"
-      android:text="消息论坛发表建议得礼品啦"/>
+      android:text="有话你说可在消息论坛发表啦"/>
     <ImageView 
       android:layout_width="0dp"
       android:layout_height="18dp"

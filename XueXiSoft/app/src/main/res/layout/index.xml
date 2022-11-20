@@ -13,7 +13,7 @@
  <LinearLayout 
   android:layout_width="match_parent"
   android:layout_height="52dp"
-  android:background="#11cd6e"
+  android:background="#11b4cd"
   android:orientation="horizontal">  
   	  <!--显示地点  -->
   	  <TextView
@@ -25,7 +25,7 @@
         android:layout_marginLeft="10dp"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:text="赣   州" /> 
+        android:text="重   庆" />
       <!-- 显示搜索框 -->
       <SearchView
         android:id="@+id/word"
@@ -68,7 +68,7 @@
 	      	    android:layout_gravity="center_horizontal"
 	      	    android:textSize="14sp"
 	      	    android:textColor="#8B8B7A"
-	      	    android:text="数学" />
+	      	    android:text="计算机网络" />
 	      	</LinearLayout>
 	      <!-- 显示课程图标和名称 -->
 	      <LinearLayout 
@@ -88,7 +88,7 @@
 	      	    android:layout_gravity="center_horizontal"
 	      	    android:textSize="14sp"
 	      	    android:textColor="#8B8B7A"
-	      	    android:text="语文" />
+	      	    android:text="操作系统" />
 	      	</LinearLayout>
 	      <!-- 显示课程图标和名称 -->
 	      <LinearLayout 
@@ -108,7 +108,7 @@
 	      	    android:layout_gravity="center_horizontal"
 	      	    android:textSize="14sp"
 	      	    android:textColor="#8B8B7A"
-	      	    android:text="英语" />
+	      	    android:text="数据结构" />
 	      	</LinearLayout>
 	      <!-- 显示课程图标和名称 -->
 	      <LinearLayout 
@@ -128,7 +128,7 @@
 	      	    android:layout_gravity="center_horizontal"
 	      	    android:textSize="14sp"
 	      	    android:textColor="#8B8B7A"
-	      	    android:text="物理" />
+	      	    android:text="MySQL数据库" />
 	      	</LinearLayout>
 	    </LinearLayout>
 	    <LinearLayout 
@@ -154,7 +154,7 @@
 	      	    android:layout_gravity="center_horizontal"
 	      	    android:textSize="14sp"
 	      	    android:textColor="#8B8B7A"
-	      	    android:text="政治" />
+	      	    android:text="Android studio" />
 	      	</LinearLayout>
 	      <!-- 显示课程图标和名称 -->
 	      <LinearLayout 
@@ -175,7 +175,7 @@
 	      	    android:layout_gravity="center_horizontal"
 	      	    android:textSize="14sp"
 	      	    android:textColor="#8B8B7A"
-	      	    android:text="化学" />
+	      	    android:text="Web前端课程" />
 	      	</LinearLayout>
 	      <!-- 显示课程图标和名称 -->
 	      <LinearLayout 
@@ -196,7 +196,7 @@
 	      	    android:layout_gravity="center_horizontal"
 	      	    android:textSize="14sp"
 	      	    android:textColor="#8B8B7A"
-	      	    android:text="生物" />
+	      	    android:text="C#/.Net课程" />
 	      	</LinearLayout>
 	      <!-- 显示课程图标和名称 -->
 	      <LinearLayout 
@@ -217,7 +217,7 @@
 	      	    android:layout_gravity="center_horizontal"
 	      	    android:textSize="14sp"
 	      	    android:textColor="#8B8B7A"
-	      	    android:text="地理" />
+	      	    android:text="PHP+MySQL课程" />
 	      	</LinearLayout>
 	    </LinearLayout>    	
     </LinearLayout>

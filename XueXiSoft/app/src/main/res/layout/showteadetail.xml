@@ -9,7 +9,7 @@
   <LinearLayout
 	  android:layout_width="match_parent"
 	  android:layout_height="51dp"
-	  android:background="#11cd6e"
+	  android:background="#11b4cd"
 	  android:orientation="horizontal">
 	  <!--返回箭头  -->
 	  <ImageView
@@ -251,7 +251,7 @@
   	      android:layout_height="40dp"
   	      android:textColor="#FFFFFF"
   	      android:text="预 约 教 师"
-  	      android:background="#11cd6e"
+  	      android:background="#11b4cd"
   	      android:layout_gravity="center"/>
   </LinearLayout>
 </LinearLayout>

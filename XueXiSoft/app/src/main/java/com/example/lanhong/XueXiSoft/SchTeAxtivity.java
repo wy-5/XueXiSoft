@@ -31,13 +31,15 @@ public class SchTeAxtivity extends Activity implements View.OnClickListener,
     //grade_pouwin里的年级按钮
     private Button grade1,grade2,grade3,grade4,grade5,grade6,grade7,grade8,grade9,grade10,grade11,grade12;
     //保存选择的年级和科目
-    private String sub_select="语文",grade_select="一年级",sub_select1="chinese";
+    private String sub_select="计算机网络",grade_select="入门",sub_select1="math";
     //确定按钮
     private Button sure_select_sub,sure_select_grade;
     //显示教师列表Listview
     private ListView select_list_teach;
     //暂时存储教师姓名
     private String teach_name="";
+    //保存家长手机号
+    public String stu_phone;
     //存储教师信息列表
     private String string_teach[]=new String[20];
     private Boolean isget=false;
@@ -47,6 +49,9 @@ public class SchTeAxtivity extends Activity implements View.OnClickListener,
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.search);
+        Intent intent=this.getIntent();
+        Bundle bundle=intent.getExtras();
+        stu_phone=bundle.getString("phone");
         init();
     }
     //组件初始化
@@ -58,7 +63,7 @@ public class SchTeAxtivity extends Activity implements View.OnClickListener,
         back_arr=(ImageView)findViewById(R.id.arrback);
         back_arr.setOnClickListener(this);
         select_list_teach=(ListView)findViewById(R.id.select_teacher);
-        select_list_teach.setOnItemClickListener(this);;
+        select_list_teach.setOnItemClickListener(this);
 
     }
     @Override
@@ -76,57 +81,57 @@ public class SchTeAxtivity extends Activity implements View.OnClickListener,
                 subPoWin();
                 break;
             case R.id.sub1:
-                sub_select="语文";
-                sub_select1="chinese";
+                sub_select="计算机网络";
+                sub_select1="math";
                 sub_btn.setText(sub_select);
                 set_subBack();
                 sub1.setBackgroundResource(R.drawable.grade_edit1);
                 break;
             case R.id.sub2:
-                sub_select="数学";
-                sub_select1="math";
+                sub_select="操作系统";
+                sub_select1="chinese";
                 sub_btn.setText(sub_select);
                 set_subBack();
                 sub2.setBackgroundResource(R.drawable.grade_edit1);
                 break;
             case R.id.sub3:
-                sub_select="英语";
+                sub_select="数据结构";
                 sub_select1="english";
                 sub_btn.setText(sub_select);
                 set_subBack();
                 sub3.setBackgroundResource(R.drawable.grade_edit1);
                 break;
             case R.id.sub4:
-                sub_select="政治";
-                sub_select1="politics";
+                sub_select="MySQL数据库";
+                sub_select1="physical";
                 sub_btn.setText(sub_select);
                 set_subBack();
                 sub4.setBackgroundResource(R.drawable.grade_edit1);
                 break;
             case R.id.sub5:
-                sub_select="地理";
-                sub_select1="geography";
+                sub_select="Android studio";
+                sub_select1="politics";
                 sub_btn.setText(sub_select);
                 set_subBack();
                 sub5.setBackgroundResource(R.drawable.grade_edit1);
                 break;
             case R.id.sub6:
-                sub_select="物理";
-                sub_select1="physical";
+                sub_select="Web前端课程";
+                sub_select1="chemistry";
                 sub_btn.setText(sub_select);
                 set_subBack();
                 sub6.setBackgroundResource(R.drawable.grade_edit1);
                 break;
             case R.id.sub7:
-                sub_select="生物";
+                sub_select="C#/.Net课程";
                 sub_select1="biology";
                 sub_btn.setText(sub_select);
                 set_subBack();
                 sub7.setBackgroundResource(R.drawable.grade_edit1);
                 break;
             case R.id.sub8:
-                sub_select="化学";
-                sub_select1="chemistry";
+                sub_select="PHP+MySQL课程";
+                sub_select1="geography";
                 sub_btn.setText(sub_select);
                 set_subBack();
                 sub8.setBackgroundResource(R.drawable.grade_edit1);
@@ -137,77 +142,77 @@ public class SchTeAxtivity extends Activity implements View.OnClickListener,
                 break;
             //年级选择按钮
             case R.id.grade1:
-                grade_select="一年级";
+                grade_select="入门";
                 grade_btn.setText(grade_select);
                 set_gradeBack();
                 grade1.setBackgroundResource(R.drawable.grade_edit1);
                 break;
             case R.id.grade2:
-                grade_select="二年级";
+                grade_select="进阶";
                 grade_btn.setText(grade_select);
                 set_gradeBack();
                 grade2.setBackgroundResource(R.drawable.grade_edit1);
                 break;
             case R.id.grade3:
-                grade_select="三年级";
+                grade_select="高级";
                 grade_btn.setText(grade_select);
                 set_gradeBack();
                 grade3.setBackgroundResource(R.drawable.grade_edit1);
                 break;
-            case R.id.grade4:
-                grade_select="四年级";
-                grade_btn.setText(grade_select);
-                set_gradeBack();
-                grade4.setBackgroundResource(R.drawable.grade_edit1);
-                break;
-            case R.id.grade5:
-                grade_select="五年级";
-                grade_btn.setText(grade_select);
-                set_gradeBack();
-                grade5.setBackgroundResource(R.drawable.grade_edit1);
-                break;
-            case R.id.grade6:
-                grade_select="六年级";
-                grade_btn.setText(grade_select);
-                set_gradeBack();
-                grade6.setBackgroundResource(R.drawable.grade_edit1);
-                break;
-            case R.id.grade7:
-                grade_select="七年级";
-                grade_btn.setText(grade_select);
-                set_gradeBack();
-                grade7.setBackgroundResource(R.drawable.grade_edit1);
-                break;
-            case R.id.grade8:
-                grade_select="八年级";
-                grade_btn.setText(grade_select);
-                set_gradeBack();
-                grade8.setBackgroundResource(R.drawable.grade_edit1);
-                break;
-            case R.id.grade9:
-                grade_select="九年级";
-                grade_btn.setText(grade_select);
-                set_gradeBack();
-                grade9.setBackgroundResource(R.drawable.grade_edit1);
-                break;
-            case R.id.grade10:
-                grade_select="高一";
-                grade_btn.setText(grade_select);
-                set_gradeBack();
-                grade10.setBackgroundResource(R.drawable.grade_edit1);
-                break;
-            case R.id.grade11:
-                grade_select="高二";
-                grade_btn.setText(grade_select);
-                set_gradeBack();
-                grade11.setBackgroundResource(R.drawable.grade_edit1);
-                break;
-            case R.id.grade12:
-                grade_select="高三";
-                grade_btn.setText(grade_select);
-                set_gradeBack();
-                grade12.setBackgroundResource(R.drawable.grade_edit1);
-                break;
+//            case R.id.grade4:
+//                grade_select="四年级";
+//                grade_btn.setText(grade_select);
+//                set_gradeBack();
+//                grade4.setBackgroundResource(R.drawable.grade_edit1);
+//                break;
+//            case R.id.grade5:
+//                grade_select="五年级";
+//                grade_btn.setText(grade_select);
+//                set_gradeBack();
+//                grade5.setBackgroundResource(R.drawable.grade_edit1);
+//                break;
+//            case R.id.grade6:
+//                grade_select="六年级";
+//                grade_btn.setText(grade_select);
+//                set_gradeBack();
+//                grade6.setBackgroundResource(R.drawable.grade_edit1);
+//                break;
+//            case R.id.grade7:
+//                grade_select="七年级";
+//                grade_btn.setText(grade_select);
+//                set_gradeBack();
+//                grade7.setBackgroundResource(R.drawable.grade_edit1);
+//                break;
+//            case R.id.grade8:
+//                grade_select="八年级";
+//                grade_btn.setText(grade_select);
+//                set_gradeBack();
+//                grade8.setBackgroundResource(R.drawable.grade_edit1);
+//                break;
+//            case R.id.grade9:
+//                grade_select="九年级";
+//                grade_btn.setText(grade_select);
+//                set_gradeBack();
+//                grade9.setBackgroundResource(R.drawable.grade_edit1);
+//                break;
+//            case R.id.grade10:
+//                grade_select="高一";
+//                grade_btn.setText(grade_select);
+//                set_gradeBack();
+//                grade10.setBackgroundResource(R.drawable.grade_edit1);
+//                break;
+//            case R.id.grade11:
+//                grade_select="高二";
+//                grade_btn.setText(grade_select);
+//                set_gradeBack();
+//                grade11.setBackgroundResource(R.drawable.grade_edit1);
+//                break;
+//            case R.id.grade12:
+//                grade_select="高三";
+//                grade_btn.setText(grade_select);
+//                set_gradeBack();
+//                grade12.setBackgroundResource(R.drawable.grade_edit1);
+//                break;
             case R.id.sure_grade_select:
                 //在这里加载数据库信息，显示出符合条件的教师信息
                 gradepoWind.dismiss();
@@ -270,24 +275,24 @@ public class SchTeAxtivity extends Activity implements View.OnClickListener,
         grade2.setOnClickListener(this);
         grade3=(Button)contentView1.findViewById(R.id.grade3);
         grade3.setOnClickListener(this);
-        grade4=(Button)contentView1.findViewById(R.id.grade4);
-        grade4.setOnClickListener(this);
-        grade5=(Button)contentView1.findViewById(R.id.grade5);
-        grade5.setOnClickListener(this);
-        grade6=(Button)contentView1.findViewById(R.id.grade6);
-        grade6.setOnClickListener(this);
-        grade7=(Button)contentView1.findViewById(R.id.grade7);
-        grade7.setOnClickListener(this);
-        grade8=(Button)contentView1.findViewById(R.id.grade8);
-        grade8.setOnClickListener(this);
-        grade9=(Button)contentView1.findViewById(R.id.grade9);
-        grade9.setOnClickListener(this);
-        grade10=(Button)contentView1.findViewById(R.id.grade10);
-        grade10.setOnClickListener(this);
-        grade11=(Button)contentView1.findViewById(R.id.grade11);
-        grade11.setOnClickListener(this);
-        grade12=(Button)contentView1.findViewById(R.id.grade12);
-        grade12.setOnClickListener(this);
+//        grade4=(Button)contentView1.findViewById(R.id.grade4);
+//        grade4.setOnClickListener(this);
+//        grade5=(Button)contentView1.findViewById(R.id.grade5);
+//        grade5.setOnClickListener(this);
+//        grade6=(Button)contentView1.findViewById(R.id.grade6);
+//        grade6.setOnClickListener(this);
+//        grade7=(Button)contentView1.findViewById(R.id.grade7);
+//        grade7.setOnClickListener(this);
+//        grade8=(Button)contentView1.findViewById(R.id.grade8);
+//        grade8.setOnClickListener(this);
+//        grade9=(Button)contentView1.findViewById(R.id.grade9);
+//        grade9.setOnClickListener(this);
+//        grade10=(Button)contentView1.findViewById(R.id.grade10);
+//        grade10.setOnClickListener(this);
+//        grade11=(Button)contentView1.findViewById(R.id.grade11);
+//        grade11.setOnClickListener(this);
+//        grade12=(Button)contentView1.findViewById(R.id.grade12);
+//        grade12.setOnClickListener(this);
         sure_select_grade=(Button)contentView1.findViewById(R.id.sure_grade_select);
         sure_select_grade.setOnClickListener(this);
     }
@@ -307,15 +312,15 @@ public class SchTeAxtivity extends Activity implements View.OnClickListener,
         grade1.setBackgroundResource(R.drawable.grade_edit);
         grade2.setBackgroundResource(R.drawable.grade_edit);
         grade3.setBackgroundResource(R.drawable.grade_edit);
-        grade4.setBackgroundResource(R.drawable.grade_edit);
-        grade5.setBackgroundResource(R.drawable.grade_edit);
-        grade6.setBackgroundResource(R.drawable.grade_edit);
-        grade7.setBackgroundResource(R.drawable.grade_edit);
-        grade8.setBackgroundResource(R.drawable.grade_edit);
-        grade9.setBackgroundResource(R.drawable.grade_edit);
-        grade10.setBackgroundResource(R.drawable.grade_edit);
-        grade11.setBackgroundResource(R.drawable.grade_edit);
-        grade12.setBackgroundResource(R.drawable.grade_edit);
+//        grade4.setBackgroundResource(R.drawable.grade_edit);
+//        grade5.setBackgroundResource(R.drawable.grade_edit);
+//        grade6.setBackgroundResource(R.drawable.grade_edit);
+//        grade7.setBackgroundResource(R.drawable.grade_edit);
+//        grade8.setBackgroundResource(R.drawable.grade_edit);
+//        grade9.setBackgroundResource(R.drawable.grade_edit);
+//        grade10.setBackgroundResource(R.drawable.grade_edit);
+//        grade11.setBackgroundResource(R.drawable.grade_edit);
+//        grade12.setBackgroundResource(R.drawable.grade_edit);
     }
     //异步任务获取教师信息
     private class Anothertask extends AsyncTask<Void, Integer, Boolean> {
@@ -341,7 +346,7 @@ public class SchTeAxtivity extends Activity implements View.OnClickListener,
                 string_teach=select.result.split(",");
                 select_list_teach.setAdapter(new ArrayAdapter<String>(SchTeAxtivity.this, R.layout.array_adapt,string_teach));
             }else {
-                Toast.makeText(SchTeAxtivity.this, "抱歉，没有满足你要查找的教师！", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SchTeAxtivity.this, "已加载完成啦！未查询到相关课程的教师！", Toast.LENGTH_SHORT).show();
             }
         }
 
@@ -354,7 +359,7 @@ public class SchTeAxtivity extends Activity implements View.OnClickListener,
         Bundle bundle=new Bundle();
         bundle.putString("teach_name", teach_name);
         bundle.putString("subject", sub_select);
-        bundle.putString("par_phone", "1");
+        bundle.putString("stu_phone", stu_phone);
         intent.putExtras(bundle);
         startActivity(intent);
 

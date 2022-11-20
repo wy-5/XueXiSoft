@@ -24,7 +24,7 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="#35A9D0"
+            android:background="#35d0c8"
             android:src="@drawable/zhanghao" />
 
         <EditText
@@ -47,7 +47,7 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="#35A9D0"
+            android:background="#35d0c8"
             android:src="@drawable/mima" />
 
         <EditText
@@ -80,7 +80,7 @@
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="10dp"
-            android:background="#35A9D0"
+            android:background="#35d0c8"
             android:text="获取验证码"
         android:textColor="#FFFFFF"
         android:textSize="16sp" />
@@ -92,8 +92,8 @@
         android:layout_height="45dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:background="#35A9D0"
-        android:text="注册"
+        android:background="#35d0c8"
+        android:text="注 册"
         android:textColor="#FFFFFF"
     android:textSize="22sp" />
 </LinearLayout>

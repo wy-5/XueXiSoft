@@ -67,13 +67,13 @@ public class order_teachActivity extends Activity implements AdapterView.OnItemC
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         // TODO Auto-generated method stub
-        teach_name=string[position].split(" ");
+        teach_name=string[position].split("  ");
         Intent intent=new Intent(order_teachActivity.this,ShowTeaDet_Activity.class);
         Bundle bundle=new Bundle();
         bundle.putString("teach_name", teach_name[1]);
         intent.putExtras(bundle);
         bundle.putString("subject", teach_name[0]);
-        bundle.putString("par_phone", phone_num);
+        bundle.putString("stu_phone", phone_num);
         startActivity(intent);
 
 

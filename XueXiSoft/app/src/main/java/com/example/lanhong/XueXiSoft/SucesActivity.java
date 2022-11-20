@@ -135,21 +135,21 @@ public class SucesActivity extends Activity implements View.OnClickListener,
         //热门名师
         //图片ID
         imageIds = new int[]{
-                R.drawable.f,
                 R.drawable.a,
                 R.drawable.b,
                 R.drawable.c,
                 R.drawable.d,
-                R.drawable.e
+                R.drawable.c,
+                R.drawable.d
         };
         //图片标题
         titles = new String[]{
-                "棒棒哒们老师",
-                "教师节",
-                "热门英语老师",
-                "热门物理老师",
-                "热门数学老师",
-                "热门老师"
+                "学习进步",
+                "热门畅销书籍",
+                "热门.Net进阶",
+                "地球最好Web前端",
+                "热门.Net进阶",
+                "地球最好Web前端"
         };
         //显示的图片
         images = new ArrayList<ImageView>();
@@ -237,7 +237,7 @@ public class SucesActivity extends Activity implements View.OnClickListener,
             case R.id.math:
                 Intent intent11=new Intent(SucesActivity.this, Showtea_Activity.class);
                 Bundle bundle11=new Bundle();
-                bundle11.putString("subject", "数学");
+                bundle11.putString("subject", "计算机网络");
                 bundle11.putString("phone",phonenum );
                 intent11.putExtras(bundle11);
                 startActivity(intent11);
@@ -245,7 +245,7 @@ public class SucesActivity extends Activity implements View.OnClickListener,
             case R.id.chinese:
                 Intent intent2=new Intent(SucesActivity.this, Showtea_Activity.class);
                 Bundle bundle2=new Bundle();
-                bundle2.putString("subject", "语文");
+                bundle2.putString("subject", "操作系统");
                 bundle2.putString("phone",phonenum );
                 intent2.putExtras(bundle2);
                 startActivity(intent2);
@@ -253,7 +253,7 @@ public class SucesActivity extends Activity implements View.OnClickListener,
             case R.id.english:
                 Intent intent3=new Intent(SucesActivity.this, Showtea_Activity.class);
                 Bundle bundle3=new Bundle();
-                bundle3.putString("subject", "英语");
+                bundle3.putString("subject", "数据结构");
                 bundle3.putString("phone",phonenum );
                 intent3.putExtras(bundle3);
                 startActivity(intent3);
@@ -261,7 +261,7 @@ public class SucesActivity extends Activity implements View.OnClickListener,
             case R.id.physical:
                 Intent intent4=new Intent(SucesActivity.this, Showtea_Activity.class);
                 Bundle bundle4=new Bundle();
-                bundle4.putString("subject", "物理");
+                bundle4.putString("subject", "MySQL数据库");
                 bundle4.putString("phone",phonenum );
                 intent4.putExtras(bundle4);
                 startActivity(intent4);
@@ -269,7 +269,7 @@ public class SucesActivity extends Activity implements View.OnClickListener,
             case R.id.politics:
                 Intent intent5=new Intent(SucesActivity.this, Showtea_Activity.class);
                 Bundle bundle5=new Bundle();
-                bundle5.putString("subject", "政治");
+                bundle5.putString("subject", "Android studio");
                 bundle5.putString("phone",phonenum );
                 intent5.putExtras(bundle5);
                 startActivity(intent5);
@@ -277,7 +277,7 @@ public class SucesActivity extends Activity implements View.OnClickListener,
             case R.id.chemistry:
                 Intent intent6=new Intent(SucesActivity.this, Showtea_Activity.class);
                 Bundle bundle6=new Bundle();
-                bundle6.putString("subject", "化学");
+                bundle6.putString("subject", "Web前端课程");
                 bundle6.putString("phone",phonenum );
                 intent6.putExtras(bundle6);
                 startActivity(intent6);
@@ -285,7 +285,7 @@ public class SucesActivity extends Activity implements View.OnClickListener,
             case R.id.biology:
                 Intent intent7=new Intent(SucesActivity.this, Showtea_Activity.class);
                 Bundle bundle7=new Bundle();
-                bundle7.putString("subject", "生物");
+                bundle7.putString("subject", "C#/.Net课程");
                 bundle7.putString("phone",phonenum );
                 intent7.putExtras(bundle7);
                 startActivity(intent7);
@@ -293,7 +293,7 @@ public class SucesActivity extends Activity implements View.OnClickListener,
             case R.id.geography:
                 Intent intent8=new Intent(SucesActivity.this, Showtea_Activity.class);
                 Bundle bundle8=new Bundle();
-                bundle8.putString("subject", "地理");
+                bundle8.putString("subject", "PHP+MySQL课程");
                 bundle8.putString("phone",phonenum );
                 intent8.putExtras(bundle8);
                 startActivity(intent8);
@@ -301,6 +301,9 @@ public class SucesActivity extends Activity implements View.OnClickListener,
             //查找教师
             case R.id.search:
                 Intent intent=new Intent(SucesActivity.this,SchTeAxtivity.class);
+                Bundle search=new Bundle();
+                search.putString("phone", phonenum);
+                intent.putExtras(search);
                 startActivity(intent);
                 break;
             //消息

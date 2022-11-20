@@ -20,7 +20,7 @@
       android:textSize="16sp"
       android:textColor="#000000"
       android:layout_gravity="center_vertical"
-      android:text="辅导书大降价啦"/>
+      android:text="最新课程大降价啦"/>
     <ImageView 
       android:layout_width="0dp"
       android:layout_height="18dp"

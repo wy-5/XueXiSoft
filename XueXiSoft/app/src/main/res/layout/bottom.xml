@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:layout_gravity="center_horizontal"
-            android:text="找老师" />
+            android:text="找课程" />
     </LinearLayout>
 
     <LinearLayout
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:layout_gravity="center_horizontal"
-            android:text="我" />
+            android:text="我的" />
     </LinearLayout>
 
 </LinearLayout>

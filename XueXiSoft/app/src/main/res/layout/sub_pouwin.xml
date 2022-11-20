@@ -26,7 +26,7 @@
 	      android:id="@+id/sub1"
 	      android:layout_width="100dp"
 	      android:layout_height="36dp"
-	      android:text="语文"
+	      android:text="计算机网络"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit1"
 	      android:textColor="#8B8B7A"/>
@@ -41,7 +41,7 @@
 	      android:id="@+id/sub2"
 	      android:layout_width="100dp"
 	      android:layout_height="36dp"
-	      android:text="数学"
+	      android:text="操作系统"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit"
 	      android:textColor="#8B8B7A"/>
@@ -56,7 +56,7 @@
 	      android:id="@+id/sub3"
 	      android:layout_width="100dp"
 	      android:layout_height="36dp"
-	      android:text="英语"
+	      android:text="数据结构"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit"
 	      android:textColor="#8B8B7A"/>
@@ -77,7 +77,7 @@
 	      android:id="@+id/sub4"
 	      android:layout_width="100dp"
 	      android:layout_height="36dp"
-	      android:text="政治"
+	      android:text="MySQL数据库"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit"
 	      android:textColor="#8B8B7A"/>
@@ -92,7 +92,7 @@
 	      android:id="@+id/sub5"
 	      android:layout_width="100dp"
 	      android:layout_height="36dp"
-	      android:text="地理"
+	      android:text="Android studio"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit"
 	      android:textColor="#8B8B7A"/>
@@ -107,7 +107,7 @@
 	      android:id="@+id/sub6"
 	      android:layout_width="100dp"
 	      android:layout_height="36dp"
-	      android:text="物理"
+	      android:text="Web前端课程"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit"
 	      android:textColor="#8B8B7A"/>
@@ -130,7 +130,7 @@
 	      android:layout_height="36dp"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit"
-	      android:text="生物"
+	      android:text="C#/.Net课程"
 	      android:textColor="#8B8B7A"/>
 	    </LinearLayout>
 	    <!--化学  -->
@@ -143,7 +143,7 @@
 	      android:id="@+id/sub8"
 	      android:layout_width="100dp"
 	      android:layout_height="36dp"
-	      android:text="化学"
+	      android:text="PHP+MySQL课程"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit"
 	      android:textColor="#8B8B7A"/>
@@ -167,7 +167,7 @@
 		  	      android:layout_height="40dp"
 		  	      android:textColor="#FFFFFF"
 		  	      android:text="确定"
-		  	      android:background="#11cd6e"
+		  	      android:background="#11b4cd"
 		  	      android:layout_gravity="center"/>
   </LinearLayout>  	                 
 </LinearLayout>

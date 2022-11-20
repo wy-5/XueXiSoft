@@ -27,7 +27,7 @@
 	      android:id="@+id/grade1"
 	      android:layout_width="100dp"
 	      android:layout_height="36dp"
-	      android:text="一年级"
+	      android:text="入门"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit1"
 	      android:textColor="#8B8B7A"/>
@@ -42,7 +42,7 @@
 	      android:id="@+id/grade2"
 	      android:layout_width="100dp"
 	      android:layout_height="36dp"
-	      android:text="二年级"
+	      android:text="进阶"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit"
 	      android:textColor="#8B8B7A"/>
@@ -57,168 +57,168 @@
 	      android:id="@+id/grade3"
 	      android:layout_width="100dp"
 	      android:layout_height="36dp"
-	      android:text="三年级"
+	      android:text="高级"
 	      android:layout_gravity="center_horizontal"
 	      android:background="@drawable/grade_edit"
 	      android:textColor="#8B8B7A"/>
 	    </LinearLayout>
 	 </LinearLayout>
-	 <LinearLayout
-	  android:orientation="horizontal"
-	  android:layout_width="fill_parent"
-	  android:layout_marginTop="7dp"
-	  android:layout_height="wrap_content">
-	   <!--4年级 -->
-	  <LinearLayout
-	    android:orientation="vertical"
-	    android:layout_width="0dp"
-	    android:layout_weight="1"
-	    android:layout_height="wrap_content">
-	    <Button 
-	      android:id="@+id/grade4"
-	      android:layout_width="100dp"
-	      android:layout_height="36dp"
-	      android:text="四年级"
-	      android:layout_gravity="center_horizontal"
-	      android:background="@drawable/grade_edit"
-	      android:textColor="#8B8B7A"/>
-	    </LinearLayout>
-	    <!--5年级  -->
-	    <LinearLayout
-	    android:orientation="vertical"
-	    android:layout_width="0dp"
-	    android:layout_weight="1"
-	    android:layout_height="wrap_content">
-	    <Button 
-	      android:id="@+id/grade5"
-	      android:layout_width="100dp"
-	      android:layout_height="36dp"
-	      android:text="五年级"
-	      android:layout_gravity="center_horizontal"
-	      android:background="@drawable/grade_edit"
-	      android:textColor="#8B8B7A"/>
-	    </LinearLayout>
-	    <!--6年级  -->
-	   <LinearLayout
-	    android:orientation="vertical"
-	    android:layout_width="0dp"
-	    android:layout_weight="1"
-	    android:layout_height="wrap_content">
-	    <Button 
-	      android:id="@+id/grade6"
-	      android:layout_width="100dp"
-	      android:layout_height="36dp"
-	      android:text="六年级"
-	      android:layout_gravity="center_horizontal"
-	      android:background="@drawable/grade_edit"
-	      android:textColor="#8B8B7A"/>
-	    </LinearLayout>
-	 </LinearLayout>
-	 <!--初中  -->
-	 <LinearLayout
-	  android:orientation="horizontal"
-	  android:layout_marginTop="15dp"
-	  android:layout_width="fill_parent"
-	  android:layout_height="wrap_content">
-	   <!--7年级-->
-	  <LinearLayout
-	    android:orientation="vertical"
-	    android:layout_width="0dp"
-	    android:layout_weight="1"
-	    android:layout_height="wrap_content">
-	    <Button 
-	      android:id="@+id/grade7"
-	      android:layout_width="100dp"
-	      android:layout_height="36dp"
-	      android:layout_gravity="center_horizontal"
-	      android:background="@drawable/grade_edit"
-	      android:text="七年级"
-	      android:textColor="#8B8B7A"/>
-	    </LinearLayout>
-	    <!--8年级  -->
-	    <LinearLayout
-	    android:orientation="vertical"
-	    android:layout_width="0dp"
-	    android:layout_weight="1"
-	    android:layout_height="wrap_content">
-	    <Button 
-	      android:id="@+id/grade8"
-	      android:layout_width="100dp"
-	      android:layout_height="36dp"
-	      android:text="八年级"
-	      android:layout_gravity="center_horizontal"
-	      android:background="@drawable/grade_edit"
-	      android:textColor="#8B8B7A"/>
-	    </LinearLayout>
-	    <!--九年级  -->
-	    <LinearLayout
-	    android:orientation="vertical"
-	    android:layout_width="0dp"
-	    android:layout_weight="1"
-	    android:layout_height="wrap_content">
-	     <Button 
-	      android:id="@+id/grade9"
-	      android:layout_width="100dp"
-	      android:layout_height="36dp"
-	      android:text="九年级"
-	      android:layout_gravity="center_horizontal"
-	      android:background="@drawable/grade_edit"
-	      android:textColor="#8B8B7A"/>
-	    </LinearLayout>
-	 </LinearLayout>
+	 <!--<LinearLayout-->
+	  <!--android:orientation="horizontal"-->
+	  <!--android:layout_width="fill_parent"-->
+	  <!--android:layout_marginTop="7dp"-->
+	  <!--android:layout_height="wrap_content">-->
+	   <!--&lt;!&ndash;4年级 &ndash;&gt;-->
+	  <!--<LinearLayout-->
+	    <!--android:orientation="vertical"-->
+	    <!--android:layout_width="0dp"-->
+	    <!--android:layout_weight="1"-->
+	    <!--android:layout_height="wrap_content">-->
+	    <!--<Button -->
+	      <!--android:id="@+id/grade4"-->
+	      <!--android:layout_width="100dp"-->
+	      <!--android:layout_height="36dp"-->
+	      <!--android:text="四年级"-->
+	      <!--android:layout_gravity="center_horizontal"-->
+	      <!--android:background="@drawable/grade_edit"-->
+	      <!--android:textColor="#8B8B7A"/>-->
+	    <!--</LinearLayout>-->
+	    <!--&lt;!&ndash;5年级  &ndash;&gt;-->
+	    <!--<LinearLayout-->
+	    <!--android:orientation="vertical"-->
+	    <!--android:layout_width="0dp"-->
+	    <!--android:layout_weight="1"-->
+	    <!--android:layout_height="wrap_content">-->
+	    <!--<Button -->
+	      <!--android:id="@+id/grade5"-->
+	      <!--android:layout_width="100dp"-->
+	      <!--android:layout_height="36dp"-->
+	      <!--android:text="五年级"-->
+	      <!--android:layout_gravity="center_horizontal"-->
+	      <!--android:background="@drawable/grade_edit"-->
+	      <!--android:textColor="#8B8B7A"/>-->
+	    <!--</LinearLayout>-->
+	    <!--&lt;!&ndash;6年级  &ndash;&gt;-->
+	   <!--<LinearLayout-->
+	    <!--android:orientation="vertical"-->
+	    <!--android:layout_width="0dp"-->
+	    <!--android:layout_weight="1"-->
+	    <!--android:layout_height="wrap_content">-->
+	    <!--<Button -->
+	      <!--android:id="@+id/grade6"-->
+	      <!--android:layout_width="100dp"-->
+	      <!--android:layout_height="36dp"-->
+	      <!--android:text="六年级"-->
+	      <!--android:layout_gravity="center_horizontal"-->
+	      <!--android:background="@drawable/grade_edit"-->
+	      <!--android:textColor="#8B8B7A"/>-->
+	    <!--</LinearLayout>-->
+	 <!--</LinearLayout>-->
+	 <!--&lt;!&ndash;初中  &ndash;&gt;-->
+	 <!--<LinearLayout-->
+	  <!--android:orientation="horizontal"-->
+	  <!--android:layout_marginTop="15dp"-->
+	  <!--android:layout_width="fill_parent"-->
+	  <!--android:layout_height="wrap_content">-->
+	   <!--&lt;!&ndash;7年级&ndash;&gt;-->
+	  <!--<LinearLayout-->
+	    <!--android:orientation="vertical"-->
+	    <!--android:layout_width="0dp"-->
+	    <!--android:layout_weight="1"-->
+	    <!--android:layout_height="wrap_content">-->
+	    <!--<Button -->
+	      <!--android:id="@+id/grade7"-->
+	      <!--android:layout_width="100dp"-->
+	      <!--android:layout_height="36dp"-->
+	      <!--android:layout_gravity="center_horizontal"-->
+	      <!--android:background="@drawable/grade_edit"-->
+	      <!--android:text="七年级"-->
+	      <!--android:textColor="#8B8B7A"/>-->
+	    <!--</LinearLayout>-->
+	    <!--&lt;!&ndash;8年级  &ndash;&gt;-->
+	    <!--<LinearLayout-->
+	    <!--android:orientation="vertical"-->
+	    <!--android:layout_width="0dp"-->
+	    <!--android:layout_weight="1"-->
+	    <!--android:layout_height="wrap_content">-->
+	    <!--<Button -->
+	      <!--android:id="@+id/grade8"-->
+	      <!--android:layout_width="100dp"-->
+	      <!--android:layout_height="36dp"-->
+	      <!--android:text="八年级"-->
+	      <!--android:layout_gravity="center_horizontal"-->
+	      <!--android:background="@drawable/grade_edit"-->
+	      <!--android:textColor="#8B8B7A"/>-->
+	    <!--</LinearLayout>-->
+	    <!--&lt;!&ndash;九年级  &ndash;&gt;-->
+	    <!--<LinearLayout-->
+	    <!--android:orientation="vertical"-->
+	    <!--android:layout_width="0dp"-->
+	    <!--android:layout_weight="1"-->
+	    <!--android:layout_height="wrap_content">-->
+	     <!--<Button -->
+	      <!--android:id="@+id/grade9"-->
+	      <!--android:layout_width="100dp"-->
+	      <!--android:layout_height="36dp"-->
+	      <!--android:text="九年级"-->
+	      <!--android:layout_gravity="center_horizontal"-->
+	      <!--android:background="@drawable/grade_edit"-->
+	      <!--android:textColor="#8B8B7A"/>-->
+	    <!--</LinearLayout>-->
+	 <!--</LinearLayout>-->
 
-	 <!--高中  -->
-	 <LinearLayout
-	  android:orientation="horizontal"
-	  android:layout_marginTop="15dp"
-	  android:layout_width="fill_parent"
-	  android:layout_height="wrap_content">
-	   <!--10年级-->
-	  <LinearLayout
-	    android:orientation="vertical"
-	    android:layout_width="0dp"
-	    android:layout_weight="1"
-	    android:layout_height="wrap_content">
-	    <Button 
-	      android:id="@+id/grade10"
-	      android:layout_width="100dp"
-	      android:layout_height="36dp"
-	      android:layout_gravity="center_horizontal"
-	      android:background="@drawable/grade_edit"
-	      android:text="高一"
-	      android:textColor="#8B8B7A"/>
-	    </LinearLayout>
-	    <!--11年级  -->
-	    <LinearLayout
-	    android:orientation="vertical"
-	    android:layout_width="0dp"
-	    android:layout_weight="1"
-	    android:layout_height="wrap_content">
-	    <Button 
-	      android:id="@+id/grade11"
-	      android:layout_width="100dp"
-	      android:layout_height="36dp"
-	      android:text="高二"
-	      android:layout_gravity="center_horizontal"
-	      android:background="@drawable/grade_edit"
-	      android:textColor="#8B8B7A"/>
-	    </LinearLayout>
-	    <!--12年级  -->
-	    <LinearLayout
-	    android:orientation="vertical"
-	    android:layout_width="0dp"
-	    android:layout_weight="1"
-	    android:layout_height="wrap_content">
-	     <Button 
-	      android:id="@+id/grade12"
-	      android:layout_width="100dp"
-	      android:layout_height="36dp"
-	      android:text="高三"
-	      android:layout_gravity="center_horizontal"
-	      android:background="@drawable/grade_edit"
-	      android:textColor="#8B8B7A"/>
-	    </LinearLayout>
-	 </LinearLayout>
+	 <!--&lt;!&ndash;高中  &ndash;&gt;-->
+	 <!--<LinearLayout-->
+	  <!--android:orientation="horizontal"-->
+	  <!--android:layout_marginTop="15dp"-->
+	  <!--android:layout_width="fill_parent"-->
+	  <!--android:layout_height="wrap_content">-->
+	   <!--&lt;!&ndash;10年级&ndash;&gt;-->
+	  <!--<LinearLayout-->
+	    <!--android:orientation="vertical"-->
+	    <!--android:layout_width="0dp"-->
+	    <!--android:layout_weight="1"-->
+	    <!--android:layout_height="wrap_content">-->
+	    <!--<Button -->
+	      <!--android:id="@+id/grade10"-->
+	      <!--android:layout_width="100dp"-->
+	      <!--android:layout_height="36dp"-->
+	      <!--android:layout_gravity="center_horizontal"-->
+	      <!--android:background="@drawable/grade_edit"-->
+	      <!--android:text="高一"-->
+	      <!--android:textColor="#8B8B7A"/>-->
+	    <!--</LinearLayout>-->
+	    <!--&lt;!&ndash;11年级  &ndash;&gt;-->
+	    <!--<LinearLayout-->
+	    <!--android:orientation="vertical"-->
+	    <!--android:layout_width="0dp"-->
+	    <!--android:layout_weight="1"-->
+	    <!--android:layout_height="wrap_content">-->
+	    <!--<Button -->
+	      <!--android:id="@+id/grade11"-->
+	      <!--android:layout_width="100dp"-->
+	      <!--android:layout_height="36dp"-->
+	      <!--android:text="高二"-->
+	      <!--android:layout_gravity="center_horizontal"-->
+	      <!--android:background="@drawable/grade_edit"-->
+	      <!--android:textColor="#8B8B7A"/>-->
+	    <!--</LinearLayout>-->
+	    <!--&lt;!&ndash;12年级  &ndash;&gt;-->
+	    <!--<LinearLayout-->
+	    <!--android:orientation="vertical"-->
+	    <!--android:layout_width="0dp"-->
+	    <!--android:layout_weight="1"-->
+	    <!--android:layout_height="wrap_content">-->
+	     <!--<Button -->
+	      <!--android:id="@+id/grade12"-->
+	      <!--android:layout_width="100dp"-->
+	      <!--android:layout_height="36dp"-->
+	      <!--android:text="高三"-->
+	      <!--android:layout_gravity="center_horizontal"-->
+	      <!--android:background="@drawable/grade_edit"-->
+	      <!--android:textColor="#8B8B7A"/>-->
+	    <!--</LinearLayout>-->
+	 <!--</LinearLayout>-->
 	 <!--确定  -->  
 	     <LinearLayout
 		      android:orientation="vertical"
@@ -231,7 +231,7 @@
 		  	      android:layout_height="40dp"
 		  	      android:textColor="#FFFFFF"
 		  	      android:text="确定"
-		  	      android:background="#11cd6e"
+		  	      android:background="#35d0c8"
 		  	      android:layout_gravity="center"/>
   </LinearLayout>  	           
 </LinearLayout>

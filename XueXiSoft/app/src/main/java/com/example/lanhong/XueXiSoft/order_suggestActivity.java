@@ -30,7 +30,7 @@ public class order_suggestActivity extends Activity implements android.view.View
         content=(EditText)findViewById(R.id.sugest_content);
         reprot=(Button)findViewById(R.id.sugest_report);
         reprot.setOnClickListener(this);
-        string=new String[]{"请选择                                            ▼","数学","英语","语文","政治","地理","历史","物理","化学","生物"};
+        string=new String[]{"请选择                                            ▼","计算机网络","操作系统","数据结构","MySQL数据库","Android studio","Web前端课程","C#/.Net课程","PHP+MySQL课程"};
         subject_spin.setAdapter(new ArrayAdapter<String>(order_suggestActivity.this, R.layout.array_adapt,string));
         subject_spin.setOnItemSelectedListener(this);;
     }

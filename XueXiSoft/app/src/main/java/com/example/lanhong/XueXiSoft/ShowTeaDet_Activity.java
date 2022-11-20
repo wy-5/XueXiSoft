@@ -27,7 +27,7 @@ public class ShowTeaDet_Activity extends Activity implements OnClickListener {
     private Boolean isget=false;
     GetTeaDetail teaDetail=new GetTeaDetail();
     Resrve_Teacher resrve=new Resrve_Teacher();
-    private String teach_phone,par_phone;
+    private String teach_phone,stu_phone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ public class ShowTeaDet_Activity extends Activity implements OnClickListener {
         Bundle bundle=intent.getExtras();
         subject_name=bundle.getString("subject");
         det_name=bundle.getString("teach_name");
-        par_phone=bundle.getString("par_phone");
+        stu_phone=bundle.getString("stu_phone");
         sex=(TextView)findViewById(R.id.det_sex);
         name=(TextView)findViewById(R.id.det_name);
         name.setText(det_name);
@@ -112,10 +112,12 @@ public class ShowTeaDet_Activity extends Activity implements OnClickListener {
                 String year = now.get(Calendar.YEAR) + "";
                 String month = (now.get(Calendar.MONTH) + 1) + "";
                 String day = now.get(Calendar.DAY_OF_MONTH) + "";
-                Boolean flag = resrve.Reserve(par_phone, teach_phone, det_name, subject_name, year + "-" + month + "-" + day, connecturl);
+                Boolean flag = resrve.Reserve(stu_phone, teach_phone, det_name, subject_name, year + "-" + month + "-" + day, connecturl);
+//                flag=true;
+                System.out.println(flag);
                 if (flag) {
                     Looper.prepare();
-                    Toast.makeText(ShowTeaDet_Activity.this, "预约成功，在消息中查看相关信息", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ShowTeaDet_Activity.this, "预约成功，请在消息中核对信息", Toast.LENGTH_SHORT).show();
                     Looper.loop();
                 }
 

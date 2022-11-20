@@ -12,5 +12,5 @@
       android:layout_marginTop="3dp"
       android:layout_gravity="center_horizontal"
       android:textSize="22sp"
-      android:text="热门名师 "/>  
+      android:text="热门课程 "/>
 </LinearLayout>

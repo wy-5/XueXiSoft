@@ -102,7 +102,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                 startActivity(intent2);
             }else {
                 Looper.prepare();
-                Toast.makeText(LoginActivity.this, "登陆失败，请重新登录", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "账号或密码错误，请重新登录", Toast.LENGTH_SHORT).show();
                 Looper.loop();
             }
 
