@@ -8,12 +8,12 @@ $teach_phone=$_POST["teach_phone"];
 $name=$_POST["teach_name"];
 $subject=$_POST["subject"];
 $data=$_POST["data"];
-//在这里进行插入数据库操作 success为1  fail为0
+//在这里进行插入数据库操作
 $sql="INSERT INTO reserve(stu_phone,teach_phone,teach_name,subject,data) VALUES ('$stu_phone','$teach_phone','$name','$subject','$data')";
 if($conn->query($sql)==TRUE){
-	echo "1";	
+	echo "success";	
 }else{
-	echo "0";
+	echo "fail";
 }
 $conn->close();
 ?> 

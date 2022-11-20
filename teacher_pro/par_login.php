@@ -7,9 +7,9 @@ $paswd=$_POST["paswd"];
 $sql="select * from student where phonenum ='$phone'and paswd='$paswd'";
 $result=$conn->query($sql);
 if($result->num_rows>0){
-	echo '1';
+	echo "1";
 	}else{
-		echo"0";
+		echo "0";
 		}
 		$conn->close();
 		?>

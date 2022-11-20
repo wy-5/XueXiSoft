@@ -1,15 +1,15 @@
 <?php
-//获取预约教师表里的信息
+//获取教师表里的信息
 include('conn.php');
 //解决中文乱码问题
 $conn->query("SET NAMES 'UTF8'");
-$phone=$_POST["phone"];
-$sql="select subject,teach_name FROM reserve where stu_phone='$phone'";
+$name=$_POST["subject_name"];
+$sql="select * FROM teacher where teach_sub='$name'";
 $result=$conn->query($sql);
 if($result->num_rows>0){
 	//输出每行数据
 	while($row=$result->fetch_assoc()){
-		echo $row['subject']."  ".$row['teach_name'].",";
+		echo $row['teach_sex'].",".$row['teache_phonum'].",".$row['teach_address'].",".$row['teach_exper'].",".$row['teach_icon'];
 		}
 	}else{
 		echo "";

@@ -5,7 +5,7 @@ include('conn.php');
 $conn->query("SET NAMES 'UTF8'");
 $subject=$_POST["subject"];
 $grade=$_POST["grade"];
-$sql="select teach_name FROM teacher where grade='grade' and teach_sub='$subject'";
+$sql="select teach_name FROM teacher where grade='$grade' and teach_sub='$subject'";
 $result=$conn->query($sql);
 if($result->num_rows>0){
 	//输出每行数据
